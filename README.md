@@ -2,6 +2,16 @@
 
 基于现有今日油价 uTools 插件与 H5 改造的微信小程序。首版包含今日油价、历史油价和调价日历三个页签，直接请求已部署的 `https://oil.bigpeng.site` 反代，不包含自建 Node 服务、云函数或自动定位。
 
+<p align="center">
+  <img src="./docs/images/miniapp-today.png" width="250" alt="今日油价" />
+  <img src="./docs/images/miniapp-history.png" width="250" alt="历史油价" />
+  <img src="./docs/images/miniapp-calendar.png" width="250" alt="调价日历" />
+</p>
+
+<p align="center">
+  今日油价 · 历史调价 · 调价日历
+</p>
+
 ## 功能
 
 - 今日油价：各标号当前价格、涨跌幅度、92 号高亮、多价区切换
