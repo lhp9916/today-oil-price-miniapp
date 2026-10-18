@@ -1,0 +1,16 @@
+{
+  "description": "今日油价微信小程序",
+  "miniprogramRoot": "dist/build/mp-weixin/",
+  "compileType": "miniprogram",
+  "appid": "",
+  "projectname": "today-oil-price-miniapp",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "compileHotReLoad": true
+  },
+  "condition": {}
+}

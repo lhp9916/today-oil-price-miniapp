@@ -1,0 +1,66 @@
+{
+  "pages": [
+    {
+      "path": "pages/today/index",
+      "style": {
+        "navigationBarTitleText": "今日油价",
+        "navigationBarBackgroundColor": "#f5f9ff",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f5f9ff",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/history/index",
+      "style": {
+        "navigationBarTitleText": "历史油价",
+        "navigationBarBackgroundColor": "#f5f9ff",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f5f9ff",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/calendar/index",
+      "style": {
+        "navigationBarTitleText": "调价日历",
+        "navigationBarBackgroundColor": "#f5f9ff",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f5f9ff",
+        "enablePullDownRefresh": true
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#8b93a6",
+    "selectedColor": "#2f7df6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/today/index",
+        "text": "今日油价",
+        "iconPath": "static/tab-price.png",
+        "selectedIconPath": "static/tab-price-active.png"
+      },
+      {
+        "pagePath": "pages/history/index",
+        "text": "历史油价",
+        "iconPath": "static/tab-history.png",
+        "selectedIconPath": "static/tab-history-active.png"
+      },
+      {
+        "pagePath": "pages/calendar/index",
+        "text": "调价日历",
+        "iconPath": "static/tab-calendar.png",
+        "selectedIconPath": "static/tab-calendar-active.png"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "今日油价",
+    "navigationBarBackgroundColor": "#f5f9ff",
+    "backgroundColor": "#f5f9ff"
+  }
+}

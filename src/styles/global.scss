@@ -1,0 +1,147 @@
+page {
+  --primary: #2f7df6;
+  --primary-deep: #1768e8;
+  --head-from: #6ba4fe;
+  --head-to: #4f8df9;
+  --text: #30343b;
+  --muted: #9298a5;
+  --muted-strong: #6e7685;
+  --border: #e6eefb;
+  --up: #e53935;
+  --down: #3478f6;
+  --radius-card: 18rpx;
+  --radius-chip: 18rpx;
+  --radius-pill: 999rpx;
+  --shadow: 0 4rpx 20rpx rgba(156, 162, 200, 0.24);
+  min-height: 100%;
+  color: var(--text);
+  background: #f5f9ff;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei',
+    sans-serif;
+  font-size: 28rpx;
+}
+
+view,
+text,
+button,
+scroll-view,
+image {
+  box-sizing: border-box;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  line-height: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+}
+
+button::after {
+  border: none;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 24rpx 24rpx calc(40rpx + env(safe-area-inset-bottom));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow);
+}
+
+.section-title {
+  margin: 12rpx 0 18rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.delta-up {
+  color: var(--up);
+}
+
+.delta-down {
+  color: var(--down);
+}
+
+.cell-up {
+  color: var(--up);
+}
+
+.cell-down {
+  color: var(--down);
+}
+
+.foot-note {
+  display: block;
+  margin-top: 18rpx;
+  font-size: 22rpx;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14rpx;
+  padding: 70rpx 34rpx;
+  text-align: center;
+}
+
+.state-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.state-desc {
+  font-size: 25rpx;
+  line-height: 1.65;
+  color: var(--muted-strong);
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 68rpx;
+  margin-top: 10rpx;
+  padding: 0 32rpx;
+  font-size: 26rpx;
+  color: #ffffff;
+  border-radius: var(--radius-pill);
+  background: var(--primary);
+}
+
+.ghost-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64rpx;
+  padding: 0 28rpx;
+  font-size: 25rpx;
+  color: var(--primary-deep);
+  border-radius: var(--radius-pill);
+  background: #ffffff;
+  box-shadow: 0 0 0 2rpx var(--primary) inset;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #ffffff 25%, #eef4ff 37%, #ffffff 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

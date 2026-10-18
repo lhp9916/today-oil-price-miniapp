@@ -1,0 +1,23 @@
+{
+  "name": "今日油价",
+  "appid": "__UNI__TODAY_OIL_PRICE",
+  "description": "查询全国各省市最新成品油价格、历史油价与调价日历",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "uniStatistics": {
+    "enable": false
+  },
+  "mp-weixin": {
+    "appid": "wx2d5a4f6ceec531f1",
+    "setting": {
+      "urlCheck": true,
+      "es6": true,
+      "postcss": true,
+      "minified": true
+    },
+    "usingComponents": true,
+    "permission": {}
+  },
+  "vueVersion": "3"
+}

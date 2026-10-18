@@ -1,0 +1,209 @@
+import type { Province } from './types'
+
+export type { Province }
+
+export interface OilTypeDefinition {
+  flag: string
+  label: string
+  category: string
+  priceField: string
+  statusField: string
+  measure: string
+}
+
+export const PROVINCES: Province[] = [
+  { id: '11', name: '北京', alias: ['Beijing', 'Peking'] },
+  { id: '12', name: '天津', alias: ['Tianjin'] },
+  { id: '13', name: '河北', alias: ['Hebei'] },
+  { id: '14', name: '山西', alias: ['Shanxi'] },
+  { id: '15', name: '内蒙古', alias: ['Inner Mongolia', 'Nei Mongol', 'Neimenggu'] },
+  { id: '21', name: '辽宁', alias: ['Liaoning'] },
+  { id: '22', name: '吉林', alias: ['Jilin'] },
+  { id: '23', name: '黑龙江', alias: ['Heilongjiang'] },
+  { id: '31', name: '上海', alias: ['Shanghai'] },
+  { id: '32', name: '江苏', alias: ['Jiangsu'] },
+  { id: '33', name: '浙江', alias: ['Zhejiang'] },
+  { id: '34', name: '安徽', alias: ['Anhui'] },
+  { id: '35', name: '福建', alias: ['Fujian'] },
+  { id: '36', name: '江西', alias: ['Jiangxi'] },
+  { id: '37', name: '山东', alias: ['Shandong'] },
+  { id: '41', name: '河南', alias: ['Henan'] },
+  { id: '42', name: '湖北', alias: ['Hubei'] },
+  { id: '43', name: '湖南', alias: ['Hunan'] },
+  { id: '44', name: '广东', alias: ['Guangdong'] },
+  { id: '45', name: '广西', alias: ['Guangxi'] },
+  { id: '46', name: '海南', alias: ['Hainan'] },
+  { id: '50', name: '重庆', alias: ['Chongqing'] },
+  { id: '51', name: '四川', alias: ['Sichuan'] },
+  { id: '52', name: '贵州', alias: ['Guizhou'] },
+  { id: '53', name: '云南', alias: ['Yunnan'] },
+  { id: '54', name: '西藏', alias: ['Tibet', 'Xizang'] },
+  { id: '61', name: '陕西', alias: ['Shaanxi'] },
+  { id: '62', name: '甘肃', alias: ['Gansu'] },
+  { id: '63', name: '青海', alias: ['Qinghai'] },
+  { id: '64', name: '宁夏', alias: ['Ningxia'] },
+  { id: '65', name: '新疆', alias: ['Xinjiang'] }
+]
+
+export const OIL_TYPES: OilTypeDefinition[] = [
+  {
+    flag: 'GAS_89',
+    label: '89号',
+    category: '汽油',
+    priceField: 'GAS_89',
+    statusField: 'GAS_89_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'GAS_92',
+    label: '92号',
+    category: '汽油',
+    priceField: 'GAS_92',
+    statusField: 'GAS_92_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'GAS_95',
+    label: '95号',
+    category: '汽油',
+    priceField: 'GAS_95',
+    statusField: 'GAS_95_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'GAS_98',
+    label: '98号',
+    category: '汽油',
+    priceField: 'GAS_98',
+    statusField: 'GAS_98_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'E92',
+    label: 'E92号',
+    category: '汽油',
+    priceField: 'E92',
+    statusField: 'E92_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'E95',
+    label: 'E95号',
+    category: '汽油',
+    priceField: 'E95',
+    statusField: 'E95_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'E98',
+    label: 'E98号',
+    category: '汽油',
+    priceField: 'E98',
+    statusField: 'E98_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'AIPAO95',
+    label: '爱跑95',
+    category: '汽油',
+    priceField: 'AIPAO_GAS_95',
+    statusField: 'AIPAO_GAS_95_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'AIPAO98',
+    label: '爱跑98',
+    category: '汽油',
+    priceField: 'AIPAO_GAS_98',
+    statusField: 'AIPAO_GAS_98_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'AIPAOE92',
+    label: '爱跑E92',
+    category: '汽油',
+    priceField: 'AIPAO_GAS_E92',
+    statusField: 'AIPAO_GAS_E92_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'AIPAOE95',
+    label: '爱跑E95',
+    category: '汽油',
+    priceField: 'AIPAO_GAS_E95',
+    statusField: 'AIPAO_GAS_E95_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'AIPAOE98',
+    label: '爱跑E98',
+    category: '汽油',
+    priceField: 'AIPAO_GAS_E98',
+    statusField: 'AIPAO_GAS_E98_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'CHAI_0',
+    label: '0号',
+    category: '柴油',
+    priceField: 'CHECHAI_0',
+    statusField: 'CHECHAI_0_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'CHAI_10',
+    label: '-10号',
+    category: '柴油',
+    priceField: 'CHECHAI_10',
+    statusField: 'CHECHAI_10_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'CHAI_20',
+    label: '-20号',
+    category: '柴油',
+    priceField: 'CHAI_20',
+    statusField: 'CHAI_20_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'CHAI_35',
+    label: '-35号',
+    category: '柴油',
+    priceField: 'CHAI_35',
+    statusField: 'CHAI_35_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'CHAI_ZYK',
+    label: '柴油卡',
+    category: '免惠最低价',
+    priceField: 'CHAI_ZYK',
+    statusField: 'CHAI_ZYK_STATUS',
+    measure: '元/升'
+  },
+  {
+    flag: 'LNG',
+    label: 'LNG',
+    category: '天然气',
+    priceField: 'LNG',
+    statusField: 'LNG_STATUS',
+    measure: '元/千克'
+  },
+  {
+    flag: 'L_CNG',
+    label: 'L-CNG',
+    category: '天然气',
+    priceField: 'L_CNG',
+    statusField: 'L_CNG_STATUS',
+    measure: '元/千克'
+  },
+  {
+    flag: 'CNG',
+    label: 'CNG',
+    category: '天然气',
+    priceField: 'CNG',
+    statusField: 'CNG_STATUS',
+    measure: '元/千克'
+  }
+]
